@@ -3,8 +3,8 @@ const genresToAccent = require("./genres_to_accent");
 const concatDomainToAsset = require("./concatDomainToAsset/");
 
 function api(app) {
-  app.listen(3000, () => {
-    console.log("Nodejs server is listening on port 3000");
+  app.listen(process.env.PORT || 3000, () => {
+    console.log("Nodejs server is running");
   });
 
   function handleQuery(sqlQuery, isSuccess) {
