@@ -12,5 +12,8 @@ corsConfig(app);
 app.use(express.json());
 app.use("/auth/", authRoute);
 app.use("/favorite/", favoriteRoute);
+app.get("/",(req,res)=>{
+    res.send('<h1>Hello</h1>')
+})
 
 api(app);
