@@ -3,7 +3,7 @@ const genresToAccent = require("./genres_to_accent");
 const concatDomainToAsset = require("./concatDomainToAsset/");
 
 function api(app) {
-  app.listen(process.env.PORT || 3001, () => {
+  app.listen((process.env.PORT || 3000), () => {
     console.log("Nodejs server is running");
   });
 
