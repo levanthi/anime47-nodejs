@@ -1,6 +1,6 @@
 const db = require("./db");
 const genresToAccent = require("./genres_to_accent");
-const concatDomainToAsset = require("./concatDomainToAsset/");
+const concatDomainToAsset = require("./concatDomainToAsset");
 
 function api(app) {
   app.listen((process.env.PORT || 3000), () => {
