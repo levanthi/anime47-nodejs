@@ -1,15 +1,16 @@
 const concatDomainToAsset = {};
-const assetDomain = "http://localhost:5500";
+const thumbnailDomain = "https://drive.google.com/thumbnail?id=";
+const animeDomain = "https://p-def5.pcloud.com/";
 
 concatDomainToAsset.thumbnail = (data) => {
   data.forEach((item) => {
-    item.thumbnail = assetDomain + item.thumbnail;
+    item.thumbnail = thumbnailDomain + item.thumbnail;
   });
   return data;
 };
 concatDomainToAsset.video = (data) => {
   data.forEach((item) => {
-    item.url = assetDomain + item.url;
+    item.url = animeDomain + item.url;
   });
   return data;
 };
