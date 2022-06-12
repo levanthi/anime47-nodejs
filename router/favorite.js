@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const db = require("../db");
-const confirmUserMiddleware = require("../middleWare/confirmUserMiddleware");
-const concatDomainToAsset = require('../concatDomainToAsset')
+const confirmUserMiddleware = require("../src/middleWare/confirmUserMiddleware");
+const concatDomainToAsset = require('../src/concatDomainToAsset')
 
 router.post("/", confirmUserMiddleware, (req, res) => {
   const userId = req.user.id;
